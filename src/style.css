@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* --golden: #e1ca96ff;
+  --darken-mode: hsl(220deg, 16%, 16%); */
+}
