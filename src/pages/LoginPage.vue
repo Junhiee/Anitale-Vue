@@ -67,7 +67,7 @@ const handleLogin = () => {
                             <input v-model="password" type="password" class="grow" placeholder="Enter password" />
                         </label>
                         <label class="label">
-                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                            <RouterLink to="/forgotpwd" class="label-text-alt link link-hover">Forgot password?</RouterLink>
                         </label>
                     </div>
                     <div class="form-control mt-6">

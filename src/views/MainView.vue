@@ -5,17 +5,21 @@ import ItemComponent from '../components/ItemComponent.vue';
 
 <template>
     <main>
-        <div class="contianer xl mx-auto">
+        <div class="container 
+            grid grid-cols-2 gap-4 px-2 py-4 gap-y-8
+            md:grid-cols-3 md:px-12 md:gap-y-12 md:py-12
+            lg:grid-cols-5 lg:px-32 lg:gap-y-12 lg:py-12
+            justify-items-center">
 
-            <!-- <ButtonComponent /> -->
-            <div class="grid grid-cols-5 gap-8 mx-32 my-12 justify-items-center">
-                <div v-for="i in 10">
-                    <ItemComponent />
-                </div>
+            <div class="box-border w-48 h-64 shadow-2xl bg-cover" v-for="i in 10" :key="i">
+                <ItemComponent />
             </div>
         </div>
     </main>
-
 </template>
 
-<style scoped></style>
+<style scoped>
+/* main {
+    border: 2px solid red;
+} */
+</style>
